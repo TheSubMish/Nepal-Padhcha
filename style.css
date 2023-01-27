@@ -1,0 +1,179 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&family=Sofia+Sans&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f8f8ff;
+    }
+    
+    a {
+        color: #545A5C;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    nav {
+        background-color: #f5fbfd;
+        box-shadow: 0px 5px 20px #cfcfcf;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 200px;
+    }
+    
+    .nav-title {
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .nav-menu li {
+        font-size: 20px;
+        padding: 20px;
+        transition: 0.7s ease;
+    }
+    
+    .nav-menu li:hover {
+        background-color: #D0D9DB;
+    }
+    
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #545A5C;
+    }
+    
+    .login {
+        width: 100%;
+        background-color: #ccabff;
+        color: #e5e5e5;
+    }
+    
+    .login:hover {
+        background-color: #ae78ff !important;
+    }
+    
+    @media(max-width:768px) {
+        nav {
+            min-height: 70px;
+            padding: 0 24px;
+        }
+        .hamburger {
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            background-color: #f5fbfd;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .nav-links li {
+            margin: 16px 0;
+            width: 100%;
+        }
+        .nav-menu.active {
+            left: 0;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1300px) {
+        nav {
+            padding: 0 50px;
+        }
+        .nav-menu {
+            gap: 30px;
+        }
+    }
+    /* nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5fbfd;
+    box-shadow: 0px 5px 20px #cfcfcf;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.nav-title {
+    padding-top: 13px;
+}
+
+.nav-title a {
+    font-size: 35px;
+    color: #545A5C;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.nav-links ul {
+    display: inline-flex;
+    list-style: none;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.nav-links ul li {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover {
+    background-color: #D0D9DB;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #545A5C;
+}
+
+.login {
+    background-color: #ccabff;
+    color: #e5e5e5;
+}
+
+.login:hover {
+    background-color: #ae78ff !important;
+} */
