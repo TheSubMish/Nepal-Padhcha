@@ -30,6 +30,10 @@
             padding: 0 20px;
             background-color: #f5fbfd;
             box-shadow: 0px 5px 20px #cfcfcf;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
         }
         
         .nav-title a {
@@ -67,6 +71,7 @@
             position: fixed;
             left: -100%;
             top: 70px;
+            height: 100vh;
             gap: 0;
             flex-direction: column;
             background-color: #f5fbfd;
@@ -103,6 +108,7 @@
         }
         
         .container {
+            margin: 120px 0 50px 0;
             padding: 0px 20px 50px 20px;
         }
         
@@ -128,6 +134,37 @@
             width: 250px;
         }
         
+        .course {
+            background-color: #f5fbfd;
+            box-shadow: 0px 5px 20px #cfcfcf;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        
+        .course div img {
+            width: 150px;
+            height: 100px;
+        }
+        
+        .course h1 {
+            font-size: 20px;
+        }
+        
+        .course p {
+            font-size: 15px;
+        }
+        
+        .course a {
+            color: #b27fff;
+        }
+        
+        .more-course {
+            text-decoration: underline;
+            text-align: center;
+        }
+        
         @media (min-width:425px) and (max-width: 550px) {
             nav {
                 padding: 0 70px;
@@ -150,6 +187,9 @@
             nav {
                 padding: 0 70px;
             }
+            .nav-menu {
+                height: 70px;
+            }
             .container {
                 padding: 0px 70px 50px 70px;
             }
@@ -165,6 +205,10 @@
             .homeContainer img {
                 width: 275px;
             }
+            .courses {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
         }
         
         @media (min-width:850px) {
@@ -177,6 +221,7 @@
                 justify-content: space-between;
                 flex-direction: row;
                 align-items: center;
+                height: 70px;
                 gap: 10px;
                 left: 0;
                 top: 0;
@@ -205,6 +250,10 @@
                 background-color: #f8f8ff;
                 color: #b27fff;
                 border: 1px solid #b27fff;
+            }
+            .courses {
+                display: grid;
+                grid-template-columns: auto auto auto;
             }
         }
         
